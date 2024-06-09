@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  font-family: $medium;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 2px;
+  margin: 0 auto;
+}
+
+.content__wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo__img {
+  width: 90px;
+  height: 90px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu{
+  display: flex;
+}
