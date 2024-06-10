@@ -1,0 +1,58 @@
+.services {
+  padding-top: 100px;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: 50%;
+  font-family: $medium;
+  font-size: 24px;
+}
+.service__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  width: calc(50% - 10px);
+}
+
+.service__item-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+
+  background-color: #e6f5fc;
+}
+
+.service__img {
+}
+
+.service__text {
+  max-width: 400px;
+  text-wrap: balance;
+}
+
+.center--wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.services__title {
+  margin: 100px 0 100px;
+  text-align: center;
+  font-family: $bold;
+  font-size: 48px;
+  color: #000;
+}
+
+.services__help-list {
+}
+
+.service__help-item {
+}
