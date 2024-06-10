@@ -5,13 +5,15 @@
 .services__list {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   justify-content: space-between;
-  flex-basis: 50%;
   font-family: $medium;
   font-size: 24px;
 }
+
 .service__item {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 50px;
   width: calc(50% - 10px);
@@ -25,16 +27,16 @@
   justify-content: center;
   align-items: center;
   margin-right: 40px;
-
   background-color: #e6f5fc;
 }
 
-.service__img {
+.service__text {
+  max-width: 380px;
+  text-wrap: pretty;
 }
 
-.service__text {
-  max-width: 400px;
-  text-wrap: balance;
+.last__text span {
+  text-wrap: nowrap;
 }
 
 .center--wrapper {
@@ -52,6 +54,9 @@
 }
 
 .services__help-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .service__help-item {
@@ -63,6 +68,7 @@
   margin-bottom: 50px;
   color: $ultramarine;
   max-width: 965px;
+  text-wrap: pretty;
   &::before {
     content: url(../img/check.png);
     position: absolute;
@@ -71,7 +77,6 @@
     margin-right: 30px;
     transform: translateY(-50%);
   }
-
   &:last-child {
     margin-bottom: 100px;
   }
