@@ -55,4 +55,24 @@
 }
 
 .service__help-item {
+  position: relative;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  font-family: $medium;
+  font-size: 24px;
+  margin-bottom: 50px;
+  color: $ultramarine;
+  max-width: 965px;
+  &::before {
+    content: url(../img/check.png);
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    margin-right: 30px;
+    transform: translateY(-50%);
+  }
+
+  &:last-child {
+    margin-bottom: 100px;
+  }
 }
