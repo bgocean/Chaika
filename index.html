@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="main">
       <div class="container">
         <div class="nav header__inner">
           <a href="#" class="logo">
@@ -21,10 +21,10 @@
                 <a href="#" class="menu__list-link"><strong>Главная</strong></a>
               </li>
               <li class="menu__list-item">
-                <a href="#" class="menu__list-link">Услуги</a>
+                <a href="#services" class="menu__list-link">Услуги</a>
               </li>
               <li class="menu__list-item">
-                <a href="#" class="menu__list-link">Контакты</a>
+                <a href="#contacts" class="menu__list-link">Контакты</a>
               </li>
             </ul>
             <div class="menu__tel">
@@ -66,7 +66,7 @@
       </div>
     </header>
 
-    <section class="services">
+    <section class="services" id="services">
       <div class="content__wrapper">
         <ul class="services__list">
           <li class="service__item">
@@ -149,41 +149,37 @@
     <section class="program">
       <div class="content__wrapper">
         <h2 class="program__title">Разработка программы SACS</h2>
-        
-          <div class="program__list">
-            <h4 class="program__list-title">
-              Полная программа SACS Seaman Advance Carrier System:
-            </h4>
-            <ul class="program__list-items">
-              <li class="program__list-item">
-                Определение плана карьерного роста, типа судов, заработной
-                платы, продолжительность контрактов
-              </li>
-              <li class="program__list-item">
-                Разбор и подготовка анкеты, опыта, рекомендательных писем,
-                отзывов
-              </li>
-              <li class="program__list-item">
-                Подготовка к собеседованию. Звонок суперинтенданта
-                (национальность индийская, греческая, арабская, турецкая) –
-                пробное собеседование
-              </li>
-              <li class="program__list-item">Разбор тестов Marlins and CES</li>
-              <li class="program__list-item">
-                Составление плана точечной рассылки, телефонных звонков и
-                собеседований
-              </li>
-              <li class="program__list-item">
-                Трудоустройство. Рекомендации по работе согласно должности,
-                взаимодействие на судне, с коллективом, к компанией
-              </li>
-              <li class="program__list-item">
-                Вы получаете пошаговую инструкцию что делать, как, чтобы скорее
-                уйти в рейс
-              </li>
-            </ul>
-          </div>
-        
+        <div class="program__list">
+          <h4 class="program__list-title">
+            Полная программа SACS Seaman Advance Carrier System:
+          </h4>
+          <ul class="program__list-items">
+            <li class="program__list-item">
+              Определение плана карьерного роста, типа судов, заработной платы,
+              продолжительность контрактов
+            </li>
+            <li class="program__list-item">
+              Разбор и подготовка анкеты, опыта, рекомендательных писем, отзывов
+            </li>
+            <li class="program__list-item">
+              Подготовка к собеседованию. Звонок суперинтенданта (национальность
+              индийская, греческая, арабская, турецкая) – пробное собеседование
+            </li>
+            <li class="program__list-item">Разбор тестов Marlins and CES</li>
+            <li class="program__list-item">
+              Составление плана точечной рассылки, телефонных звонков и
+              собеседований
+            </li>
+            <li class="program__list-item">
+              Трудоустройство. Рекомендации по работе согласно должности,
+              взаимодействие на судне, с коллективом, к компанией
+            </li>
+            <li class="program__list-item">
+              Вы получаете пошаговую инструкцию что делать, как, чтобы скорее
+              уйти в рейс
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -243,7 +239,9 @@
             <h3 class="priority__title">
               Что программа дает в жизни на берегу?
             </h3>
-            <p>Моряк и его семья могут заранее планировать:</p>
+            <p class="priorities__items-text">
+              Моряк и его семья могут заранее планировать:
+            </p>
             <ul class="priorities__items-list">
               <li class="priorities__item">
                 Отпуск: отдых, поездки, семейные мероприятия, торжества
@@ -252,11 +250,13 @@
                 Покупки: недвижимости, автомобилей, ремонты, переезды
               </li>
             </ul>
-            <p>
+            <p class="priorities__items-text">
               Откладывать деньги: для инвестиций в недвижимость, бизнес,
               обучение детей, покупки дома, дачи себе, детям, родителям
             </p>
-            <p>Появляется уверенность в завтрашнем дне</p>
+            <p class="priorities__items-text">
+              Появляется уверенность в завтрашнем дне
+            </p>
           </div>
           <div class="priority__item-img">
             <img src="./img/priority-img-3.jpg" alt="priority-img-3" />
@@ -277,78 +277,89 @@
       </div>
     </div>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="container">
-        <div class="contacts__form">
-          <input
-            type="text"
-            class="contacts__form-input"
-            placeholder="Имя"
-            required
-          />
-          <input
-            type="email"
-            class="contacts__form-input"
-            placeholder="Почта"
-            required
-          />
-          <input
-            type="tel"
-            class="contacts__form-input"
-            placeholder="Телефон"
-            required
-          />
-          <textarea
-            class="contacts__form-textarea"
-            placeholder="Сообщение"
-          ></textarea>
-          <button class="contacts__form-btn">Отправить</button>
-        </div>
-        <div class="contacts__list">
-          <ul class="contacts__list-items">
-            <li class="contact__list-item">
-              <img src="./img/phone.png" alt="phone-icon" />
-              <a href="tel:+380732888555" class="contact__list-link"
-                >(073) 288 85 55</a
-              >
-            </li>
-            <li class="contact__list-item">
-              <img src="./img/email.png" alt="mail-icon" />
-              <a href="mailto:ocadocsinfo@gmail.com" class="contact__list-link"
-                >ocadocsinfo@gmail.com</a
-              >
-            </li>
-            <li class="contact__list-item">
-              <img src="./img/point.png" alt="location-icon" />
-              <a
-                href="https://www.google.com/maps?ll=46.473303,30.741095"
-                target="_blank"
-                >ул. Пушкинская 54, оф 5</a
-              >
-            </li>
-            <li class="contact__list-item">
-              <div class="tele-btn">
-                <img src="./img/telegram.png" alt="telegram-icon" />
-                <a href="https://t.me/odessacrewingagency" target="_blank"
-                  >Открыть бота</a
+        <div class="contacts__items">
+          <div class="contacts__form">
+            <h5 class="contacts__form-title">Связаться</h5>
+            <p class="contacts__form-text">
+              Остались вопросы или хочешь обсудить сотрудничество -
+              <strong>заполни форму ниже</strong>
+            </p>
+            <input
+              type="text"
+              class="contacts__form-input"
+              placeholder="Имя"
+              required
+            />
+            <input
+              type="email"
+              class="contacts__form-input"
+              placeholder="Почта"
+              required
+            />
+            <input
+              type="tel"
+              class="contacts__form-input"
+              placeholder="Телефон"
+              required
+            />
+            <textarea
+              class="contacts__form-textarea"
+              placeholder="Сообщение"
+            ></textarea>
+            <button class="btn contacts__form-btn">Отправить</button>
+          </div>
+          <div class="contacts__list">
+            <ul class="contacts__list-items">
+              <li class="contact__list-item">
+                <div class="contact__list-item--img">
+                  <img src="./img/phone.png" alt="phone-icon" />
+                </div>
+                <a href="tel:+380732888555" class="contact__list-link"
+                  >(073) 288 85 55</a
                 >
-                <img src="./img/arrow.png" alt="arrow-icon" />
-              </div>
-            </li>
-            <li class="contact__list-item">
-              <div class="map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.7611835820608!2d30.7410953!3d46.4732382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63182c8ee2d6d%3A0xd9d71797d3161f2!2z0YPQuy4g0J_Rg9GI0LrQuNC90YHQutCw0Y8sIDU0LCDQntC00LXRgdGB0LAsINCe0LTQtdGB0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1sru!2sua!4v1717869862574!5m2!1sru!2sua"
-                  width="600"
-                  height="450"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </li>
-          </ul>
+              </li>
+              <li class="contact__list-item">
+                <div class="contact__list-item--img">
+                  <img src="./img/email.png" alt="mail-icon" />
+                </div>
+                <a
+                  href="mailto:ocadocsinfo@gmail.com"
+                  class="contact__list-link"
+                  >ocadocsinfo@gmail.com</a
+                >
+              </li>
+              <li class="contact__list-item">
+                <div class="contact__list-item--img">
+                  <img src="./img/point.png" alt="location-icon" />
+                </div>
+                <a
+                  href="https://www.google.com/maps?ll=46.473303,30.741095"
+                  target="_blank"
+                  >ул. Пушкинская 54, оф 5</a
+                >
+              </li>
+              <li class="contact__list-item">
+                <div class=" btn tele-btn">
+                  <img src="./img/telegram.png" alt="telegram-icon" />
+                  <a href="https://t.me/odessacrewingagency" target="_blank"
+                    >Открыть бота</a
+                  >
+                  <img src="./img/arrow.png" alt="arrow-icon" />
+                </div>
+              </li>
+              <li class="contact__list-item">
+                <div class="map">
+                  <a
+                  href="https://www.google.com/maps?ll=46.473303,30.741095"
+                  target="_blank"
+                  ><img class="map" src="./img/map.jpg" alt="map"></a
+                >
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -362,13 +373,13 @@
           <nav class="footer__menu">
             <ul class="menu footer__menu-list">
               <li class="footer__menu-item">
-                <a href="#" class="menu__list-link">Главная</a>
+                <a href="#main" class="menu__list-link">Главная</a>
               </li>
               <li class="footer__menu-item">
-                <a href="#" class="menu__list-link">Услуги</a>
+                <a href="#services" class="menu__list-link">Услуги</a>
               </li>
               <li class="footer__menu-item">
-                <a href="#" class="menu__list-link">Контакты</a>
+                <a href="#contacts" class="menu__list-link">Контакты</a>
               </li>
               <li class="footer__menu-item">
                 <a href="#" class="menu__list-link">Публичный договор</a>
@@ -382,6 +393,7 @@
       </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

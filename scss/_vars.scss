@@ -4,5 +4,35 @@ $semibold: "ProximaNova-Semibold", sans-serif;
 $proximabold: "ProximaNova-Bold", sans-serif;
 $regular: "Raleway-Regular", sans-serif;
 $ligth: "ProximaNova-Light", sans-serif;
-
 $ultramarine: #0d2b46;
+$blue: #e1eeff;
+
+@mixin title {
+  text-align: center;
+  font-family: $bold;
+  font-size: 48px;
+  color: #000;
+}
+
+@mixin infotext {
+    margin: 0 auto 100px;
+    text-align: center;
+    font-family: $medium;
+    font-size: 32px;
+    color: #000;
+  }
+
+@mixin card {
+  border: 1px solid #fff;
+  border-radius: 30px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+@mixin card-img {
+  border-radius: 30px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #d9d9d9;
+}
+
+

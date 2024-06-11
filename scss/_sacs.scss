@@ -1,0 +1,8 @@
+.sacs__info-title {
+  @include title;
+  margin: 100px 0 50px;
+}
+.sacs__info-text {
+  @include infotext;
+  max-width: 1020px;
+}

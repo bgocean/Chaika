@@ -46,11 +46,8 @@
 }
 
 .services__title {
-  margin: 100px 0 100px;
-  text-align: center;
-  font-family: $bold;
-  font-size: 48px;
-  color: #000;
+  margin: 100px 0 100px;  
+  @include title;
 }
 
 .services__help-list {

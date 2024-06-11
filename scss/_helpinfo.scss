@@ -1,0 +1,24 @@
+.help__info {
+  padding-top: 100px;
+}
+
+.help__info-text {
+  @include infotext;
+  max-width: 960px;
+}
+.help__info-title {
+  @include title;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-bottom: 100px;
+  &::before {
+    content: url(../img/anchor.png);
+    vertical-align: middle;
+    margin-right: 40px;
+  }
+  &::after {
+    content: url(../img/anchor.png);
+    vertical-align: middle;
+    margin-left: 40px;
+  }
+}
