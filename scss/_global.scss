@@ -1,16 +1,5 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+body {
+  min-height: 100vh;  
 }
 
 button {
@@ -23,14 +12,8 @@ ul {
   list-style: none;
 }
 
-body {
-  min-height: 100vh;
-  // font-family: $medium;
-}
-
 .container {
-  max-width: 1200px;
-  padding: 0 2px;
+  max-width: 1200px;  
   margin: 0 auto;
 }
 
