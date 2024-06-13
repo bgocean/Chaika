@@ -1,5 +1,11 @@
 .footer {
-  padding-top: 70px;
+  padding: 70px 0 50px;
+  background-color: $blue;
+}
+
+.footer__menu-list{
+  font-family: "Arial-Regular", sans-serif;
+  gap: 70px;
 }
 
 .footer__inner {

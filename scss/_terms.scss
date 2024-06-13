@@ -1,0 +1,25 @@
+.terms {
+  padding: 100px 0 100px;
+}
+
+.terms__title {
+  @include title;
+  margin-bottom: 50px;
+}
+
+.terms__text {
+  text-align: center;
+  font-family: $medium;
+  font-size: 24px;
+  margin-bottom: 30px;
+  max-width: 1080px;
+  padding: 20px 40px;
+}
+
+.terms__btn {
+    text-align: left;
+  min-width: 320px;
+  margin: 70px auto;
+  background-color: $blue;
+  font-size: 25px;
+}

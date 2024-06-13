@@ -72,16 +72,17 @@
   font-size: 18px;
 }
 
-.header__content {
+.header__content-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 63px;
   gap: 24px;
 }
 
 .header__content-about {
+  margin-top: -150px;
   flex-basis: 500px;
 }
 
