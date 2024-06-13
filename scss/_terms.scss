@@ -1,5 +1,5 @@
 .terms {
-  padding: 100px 0 100px;
+  padding: 100px 0 50px;
 }
 
 .terms__title {
@@ -17,9 +17,9 @@
 }
 
 .terms__btn {
-    text-align: left;
   min-width: 320px;
-  margin: 70px auto;
+  min-height: 65px;
+  margin: 50px auto;
   background-color: $blue;
   font-size: 25px;
 }

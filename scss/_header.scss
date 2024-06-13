@@ -94,8 +94,9 @@
 }
 
 .header__content-img {
+  @include card;
   flex-basis: 500px;
-  width: 493px;
+  width: 500px;
   height: 545px;
   border-radius: 60px;
   margin-bottom: 100px;
