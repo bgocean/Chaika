@@ -3,9 +3,22 @@
   background-color: $blue;
 }
 
+@media (max-width: 940px) {
+  .program {
+    padding: 75px 0 75px;
+  }
+}
+
 .program__title {
   @include title;
   margin-bottom: 50px;
+}
+
+@media (max-width: 940px) {
+  .program__title {
+    margin-bottom: 35px;
+    font-size: 30px;
+  }
 }
 
 .program__list {
@@ -23,6 +36,13 @@
   margin-bottom: 50px;
 }
 
+@media (max-width: 940px) {
+  .program__list-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+
 .program__list-item {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -36,5 +56,12 @@
   &::before {
     content: url(../img/marker.png);
     align-self: center;
+  }
+}
+
+@media (max-width: 940px) {
+  .program__list-item {
+    font-size: 20px;
+    margin-bottom: 30px;
   }
 }

@@ -2,7 +2,22 @@
   @include title;
   margin: 100px 0 50px;
 }
+
+@media (max-width: 940px) {
+  .sacs__info-title {
+    margin: 75px 0 30px;
+    font-size: 35px;
+  }
+}
+
 .sacs__info-text {
   @include infotext;
   max-width: 1020px;
+}
+
+@media (max-width: 940px) {
+  .sacs__info-text {
+    font-size: 24px;
+    margin: 0 auto 75px;
+  }
 }
