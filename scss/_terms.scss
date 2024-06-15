@@ -2,9 +2,22 @@
   padding: 100px 0 50px;
 }
 
+@media (max-width: 940px) {
+  .terms {
+    padding: 75px 0 35px;
+  }
+}
+
 .terms__title {
   @include title;
   margin-bottom: 50px;
+}
+
+@media (max-width: 940px) {
+  .terms__title {
+    margin-bottom: 30px;
+    font-size: 35px;
+  }
 }
 
 .terms__text {
@@ -16,10 +29,25 @@
   padding: 20px 40px;
 }
 
+@media (max-width: 940px) {
+  .terms__text {
+    font-size: 20px;
+    padding: 0;
+  }
+}
+
 .terms__btn {
   min-width: 320px;
   min-height: 65px;
   margin: 50px auto;
   background-color: $blue;
   font-size: 25px;
+}
+
+@media (max-width: 940px) {
+  .terms__btn {
+    font-size: 20px;
+    min-width: 280px;
+    min-height: 50px;
+  }
 }

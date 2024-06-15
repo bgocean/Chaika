@@ -6,6 +6,12 @@
   padding: 100px 0 100px;
 }
 
+@media (max-width: 940px) {
+  .contacts {
+    padding: 75px 0 75px;
+  }
+}
+
 .contacts__items {
   display: flex;
   flex-wrap: nowrap;
@@ -19,10 +25,24 @@
   @include card;
 }
 
+@media (max-width: 940px) {
+  .contacts__form {
+    padding: 40px 30px;
+    max-width: 470px;
+  }
+}
+
 .contacts__form-title {
   margin-bottom: 28px;
   @include title;
   text-align: left;
+}
+
+@media (max-width: 940px) {
+  .contacts__form-title {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
 }
 
 .contacts__form-text {
@@ -31,6 +51,13 @@
   font-size: 20px;
   color: $ultramarine;
   max-width: 380px;
+}
+
+@media (max-width: 940px) {
+  .contacts__form-text {
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
 }
 
 .contacts__form-input {
@@ -46,6 +73,14 @@
     font-family: $bold;
     font-size: 17px;
     color: rgba(85, 85, 85, 0.35);
+  }
+}
+
+@media (max-width: 940px) {
+  .contacts__form-input {
+    font-size: 18px;
+    width: 380px;
+    height: 42px;
   }
 }
 
@@ -66,14 +101,37 @@
   }
 }
 
+@media (max-width: 940px) {
+  .contacts__form-textarea {
+    font-size: 18px;
+    width: 380px;
+    height: 155px;
+  }
+}
+
 .contacts__form-btn {
   align-self: flex-end;
+}
+
+@media (max-width: 940px) {
+  .contacts__form-btn {
+    width: 155px;
+    height: 50px;
+    line-height: 49px;
+  }
 }
 
 .contacts__list {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
+}
+
+@media (max-width: 940px) {
+  .contacts__list {
+    align-self: center;
+    max-width: 390px;
+  }
 }
 
 .contact__list-item {
@@ -97,9 +155,17 @@
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+@media (max-width: 940px) {
+  .contact__list-item--img {
+    width: 60px;
+    height: 60px;
+    margin: 0 20px 30px 30px;
+  }
+}
+
 .tele-btn {
   width: 247px;
-  height: 70px;  
+  height: 70px;
   margin: 12px 0 35px 60px;
   border: 1px solid #fff;
   background-color: rgba(255, 255, 255, 0.5);
@@ -108,6 +174,15 @@
   justify-content: center;
   .telegram__tele-btn {
     margin-right: 35px;
+  }
+}
+
+@media (max-width: 940px) {
+  .tele-btn {
+    width: 225px;
+    height: 60px;
+    line-height: 49px;
+    margin: 6px 0 30px 35px;
   }
 }
 
@@ -121,9 +196,16 @@
 }
 
 .map {
-  margin-left: 30px;
+  width: 561px;
+  height: 326px;
+  margin-left: 60px;
   border-radius: 30px;
-  // overflow: hidden;
+  overflow: hidden;
 }
 
-
+@media (max-width: 940px) {
+  .map {
+    margin-left: 40px;
+    height: 340px;
+  }
+}
