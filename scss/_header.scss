@@ -12,6 +12,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .header {
+    padding-top: 18px;
+  }
+}
+
 .header__inner {
   display: flex;
   align-items: center;
@@ -25,7 +31,7 @@
 
 @media (max-width: 940px) {
   .header__inner {
-   border-radius: 18px;
+    border-radius: 18px;
   }
 }
 
@@ -41,6 +47,10 @@
     width: 64px;
     height: 64px;
   }
+}
+
+.menu__btn {
+  display: none;
 }
 
 .header__menu {
@@ -65,7 +75,7 @@
   }
 }
 
-@media(max-width: 940px) {
+@media (max-width: 940px) {
   .menu__list-item {
     margin: 0 20px;
     &:not(:last-child)::after {
@@ -85,9 +95,19 @@
   }
 }
 
-@media(max-width: 940px) {
+@media (max-width: 940px) {
   .menu__list-link {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu__list {
+    display: none;
+  }
+  .menu__btn {
+    display: block;
+    cursor: pointer;
   }
 }
 
@@ -109,9 +129,17 @@
   font-size: 18px;
 }
 
-@media(max-width: 940px) {
-  .menu__btn-link  {
+@media (max-width: 940px) {
+  .menu__btn-link {
     display: none;
+  }
+}
+@media (max-width: 480px) {
+  .menu__btn-link {
+    display: block;
+  }
+  .menu__btn-link strong {
+    font-size: 15px;
   }
 }
 
@@ -124,6 +152,15 @@
   gap: 24px;
 }
 
+@media (max-width: 480px) {
+  .header__content-items {
+    flex-direction: column-reverse;
+    // align-items: center;
+    justify-content:center;
+    padding-top: 35px;
+  }
+}
+
 .header__content-about {
   display: flex;
   flex-direction: column;
@@ -133,8 +170,8 @@
 
 @media (max-width: 940px) {
   .header__content-about {
-    flex-basis: 400px;
-    margin-top: 0;
+    flex-basis: 240px;
+    margin-top: -75px;
   }
 }
 
@@ -148,6 +185,12 @@
 @media (max-width: 940px) {
   .content__title {
     font-size: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content__title {
+    font-size: 46px;
   }
 }
 
@@ -168,7 +211,13 @@
     border-radius: 40px;
     background-color: transparent;
     border: none;
-    flex-basis: auto;    
+    flex-basis: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__content-img {
+    margin-top: 0;
   }
 }
 
@@ -185,7 +234,14 @@
     font-size: 18px;
     max-width: 377px;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .content__text {
+    margin-top: 15px;
+    font-size: 14px;
+    max-width: 185px;
+  }
 }
 
 .content__buttons {
@@ -195,6 +251,9 @@
   color: $ultramarine;
 }
 
+@media (max-width: 940px) { 
+  .content__buttons { margin-top: 25px; }
+}
 
 .content__btn-services {
   backdrop-filter: blur(15px);
@@ -202,7 +261,8 @@
 }
 
 @media (max-width: 940px) {
-  .content__btn-contacts, .content__btn-services{
+  .content__btn-contacts,
+  .content__btn-services {
     font-size: 15px;
     width: 155px;
     height: 50px;
@@ -210,8 +270,14 @@
   }
 }
 
-
-
+@media (max-width: 480px) {
+  .content__btn-contacts, .content__btn-services {
+    font-size: 14px;
+    width: 123px;
+    height: 40px;
+    line-height: 39px;
+  }
+}
 
 //media - номер телефона для адаптива
 .wrapper__menu-media {

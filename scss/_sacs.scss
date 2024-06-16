@@ -9,6 +9,12 @@
     font-size: 35px;
   }
 }
+@media (max-width: 480px) {
+  .sacs__info-title {
+    margin: 50px 0 20px;
+    font-size: 20px;
+  }
+}
 
 .sacs__info-text {
   @include infotext;
@@ -19,5 +25,12 @@
   .sacs__info-text {
     font-size: 24px;
     margin: 0 auto 75px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sacs__info-text {
+    font-size: 18px;
+    margin: 0 auto 50px;
   }
 }

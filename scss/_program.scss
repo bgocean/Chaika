@@ -8,6 +8,11 @@
     padding: 75px 0 75px;
   }
 }
+@media (max-width: 480px) {
+  .program {
+    padding: 50px 0 50px;
+  }
+}
 
 .program__title {
   @include title;
@@ -21,10 +26,24 @@
   }
 }
 
+@media (max-width: 480px) {
+  .program__title {
+    margin-bottom: 45px;
+    font-size: 20px;
+  }
+}
+
 .program__list {
   padding-top: 50px;
   padding-left: 60px;
   @include card;
+}
+
+@media (max-width: 480px) {
+  .program__list{
+    padding-top: 20px;
+    padding-left: 10px;
+  }
 }
 
 .program__list-title {
@@ -40,6 +59,13 @@
   .program__list-title {
     font-size: 20px;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .program__list-title {
+    font-size: 14px;
+    margin-bottom: 20px;
   }
 }
 
@@ -63,5 +89,12 @@
   .program__list-item {
     font-size: 20px;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .program__list-item {font-size: 14px;
+    margin-bottom: 20px;
+    max-width: 285px;    
   }
 }

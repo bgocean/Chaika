@@ -7,6 +7,11 @@
     padding-top: 75px;
   }
 }
+@media (max-width: 480px) {
+  .services {
+    padding-top: 50px;
+  }
+}
 
 .services__list {
   display: flex;
@@ -23,6 +28,13 @@
     font-size: 18px;
   }
 }
+@media (max-width: 480px) {
+  .services__list {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+  }
+}
 
 .service__item {
   display: flex;
@@ -31,6 +43,13 @@
   margin-bottom: 50px;
   width: calc(50% - 10px);
   // box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+  .service__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .service__item-img {
@@ -52,6 +71,21 @@
   }
 }
 
+@media (max-width: 480px) {
+  .service__item-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service__img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
 .service__text {
   max-width: 380px;
   text-wrap: pretty;
@@ -67,6 +101,12 @@
   text-wrap: nowrap;
 }
 
+@media (max-width: 480px) {
+  .last__text span {
+    text-wrap: wrap;
+  }
+}
+
 .center--wrapper {
   width: 100%;
   display: flex;
@@ -74,7 +114,7 @@
 }
 
 .services__title {
-  margin: 100px 0 100px;  
+  margin: 100px 0 100px;
   @include title;
 }
 
@@ -82,6 +122,13 @@
   .services__title {
     margin: 75px 0 75px;
     font-size: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services__title {
+    margin: 40px 0 50px;
+    font-size: 20px;
   }
 }
 
@@ -128,6 +175,24 @@
     }
     &:last-child {
       margin-bottom: 100px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .service__help-item {
+    font-size: 14px;
+    margin-bottom: 20px;
+    &::before {
+      content: url(../img/media/check-mob-2.png);
+      position: absolute;
+      left: -5px;
+      top: 50%;
+      margin-right: 30px;
+      transform: translateY(-50%);
+    }
+    &:last-child {
+      margin-bottom: 50px;
     }
   }
 }
