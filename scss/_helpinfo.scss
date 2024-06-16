@@ -66,19 +66,55 @@
   }
 }
 
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
+  // .help__info-title {
+  //   font-size: 20px;
+  //   margin-bottom: 50px;
+  //   &::before {
+  //     content: url(../img/media/anchor-mob.png);
+  //     vertical-align: middle;
+  //     margin-right: 30px;
+  //   }
+  //   &::after {
+  //     content: url(../img/media/anchor-mob.png);
+  //     vertical-align: middle;
+  //     margin-left: 30px;
+  //   }
+  // }
   .help__info-title {
     font-size: 20px;
     margin-bottom: 50px;
-    &::before {
-      content: url(../img/media/anchor-mob.png);
-      vertical-align: middle;
-      margin-right: 30px;
-    }
-    &::after {
-      content: url(../img/media/anchor-mob.png);
-      vertical-align: middle;
-      margin-left: 30px;
-    }
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .help__info-title::before,
+  .help__info-title::after {
+    grid-row: span 2;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .help__info-title::before {
+    grid-column: 1;
+  }
+
+  .help__info-title::after {
+    grid-column: 3;
+  }
+
+  .help__info-title span {
+    grid-column: 2;
+    text-align: center;
+  }
+
+  .help__info-title::before,
+  .help__info-title::after {
+    content: url("../img/media/anchor-mob-2.png");
+    display: flex;
+    align-items: center;
   }
 }

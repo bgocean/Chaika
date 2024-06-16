@@ -137,19 +137,19 @@
   .priority__item-img-1 img {
     width: 378px;
     height: 211px;
-    // object-fit: cover;
+    object-fit: cover;
   }
   .priority__item-img-2 img {
-    width: 378px;
-    height: 211px;
-    // width: 100%;
-    // height: auto;
-    // object-fit: cover;
+    // width: 378px;
+    // height: 211px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
   .priority__item-img-3 img {
     width: 378px;
     height: 211px;
-    // object-fit: cover;
+    object-fit: cover;
   }
 }
 @media (max-width: 360px) {
