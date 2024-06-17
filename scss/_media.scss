@@ -2,10 +2,6 @@
   display: none;
 }
 
-.header__menu-mobil{
-  display: none;
-}
-
 // @media (max-with: 790px) {
 // }
 
@@ -24,10 +20,7 @@
   }
   .content__wrapper {
     max-width: 428px;
-  }
-  .header__menu-mobil{
-    display: block;
-  }
+  }  
 }
 
 @media (max-width: 360px) {

@@ -330,3 +330,24 @@
 .menu__btn-link--media {
   text-align: center;
 }
+
+.menu__list-mobil {
+  display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 25px 50px;
+}
+.menu__list-mobil--item:nth-child(4) {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+.menu__list-mobil {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .menu__list-mobil {
+    display: grid;
+  }
+}
