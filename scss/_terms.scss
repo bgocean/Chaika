@@ -8,6 +8,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .terms {
+    padding: 50px 0 20px;
+  }
+}
+
 .terms__title {
   @include title;
   margin-bottom: 50px;
@@ -17,6 +23,13 @@
   .terms__title {
     margin-bottom: 30px;
     font-size: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms__title {
+    margin-bottom: 20px;
+    font-size: 20px;
   }
 }
 
@@ -35,6 +48,11 @@
     padding: 0;
   }
 }
+@media (max-width: 480px) {
+  .terms__text {
+    font-size: 14px;
+  }
+}
 
 .terms__btn {
   min-width: 320px;
@@ -49,5 +67,14 @@
     font-size: 20px;
     min-width: 280px;
     min-height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms__btn {
+    font-size: 14px;
+    min-width: 200px;
+    min-height: 40px;
+    line-height: 59px;
   }
 }
