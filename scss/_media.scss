@@ -6,8 +6,8 @@
   display: none;
 }
 
-@media (max-with: 790px) {
-}
+// @media (max-with: 790px) {
+// }
 
 @media (max-width: 940px) {
   .container {
@@ -24,6 +24,9 @@
   }
   .content__wrapper {
     max-width: 428px;
+  }
+  .header__menu-mobil{
+    display: block;
   }
 }
 
