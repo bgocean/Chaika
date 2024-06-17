@@ -10,3 +10,11 @@ $(document).ready(function () {
     }
   );
 });
+
+const menuBtn = document.querySelector(".menu__btn");
+const menuList = document.querySelector(".header__menu-mobil");
+const menuMobil = document.querySelector(".header__menu-mobil");
+
+menuBtn.addEventListener("click", () => {
+  menuList.classList.toggle("menu__list--open");  
+});
