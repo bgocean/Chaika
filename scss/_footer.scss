@@ -1,4 +1,4 @@
-.footer {
+/* .footer {
   padding: 70px 0 50px;
   background-color: $blue;
 }
@@ -14,6 +14,13 @@
   }
 }
 
+.footer__inner {
+  @media (max-width: 480px) {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;   
+  }
+}
+
 .footer__menu-list {
   font-family: "Arial-Regular", sans-serif;
   gap: 70px;
@@ -24,10 +31,20 @@
     gap: 50px;
   }
 }
+@media (max-width: 480) {
+  .footer__menu-list {
+  }
+}
 
 .footer__inner {
   display: flex;
   justify-content: space-between;
+}
+
+.menu__list-link {
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 }
 
 .footer__copyright {
@@ -41,5 +58,111 @@
   .footer__copyright {
     margin: 70px auto 0;
     font-size: 14px;
+  }
+}
+ */
+ .footer {
+  padding: 70px 0 50px;
+  background-color: $blue;
+}
+
+@media (max-width: 940px) {
+  .footer {
+    padding: 60px 0 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 50px 0 50px;
+  }
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+  .footer__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__menu-list {
+  font-family: "Arial-Regular", sans-serif;
+  display: flex;
+  gap: 70px;
+}
+
+@media (max-width: 940px) {
+  .footer__menu-list {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__menu-list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 10px 20px;
+  }
+
+  .footer__menu-item:nth-child(4) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .footer__logo {
+    margin-top: 20px;
+    order: 1;
+  }
+}
+
+.menu__list-link {
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+}
+
+.footer__copyright {
+  margin: 95px auto 70px;
+  text-align: center;
+  font-family: "Arial-Regular", sans-serif;
+  font-size: 16px;
+}
+
+@media (max-width: 940px) {
+  .footer__copyright {
+    margin: 70px auto 0;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__copyright {
+    margin: 30px auto 0;
+    max-width: 210px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__menu-list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 25px 50px;
+  }
+
+  .footer__menu-item:nth-child(4) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .footer__logo {
+    margin-top: 20px;
+    order: 1;
   }
 }
