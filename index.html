@@ -241,7 +241,7 @@
     <section class="priorities">
       <div class="container">
         <div class="priority__item-listcontent">
-          <div class="priority__item-content">
+          <div class="priority__item-content priority__item-content--list">
             <h3 class="priority__title">
               Що вам дасть проходження програми SACS?
             </h3>
@@ -264,7 +264,7 @@
           </div>
         </div>
         <div class="priority__item-textcontent">
-          <div class="priority__item-content">
+          <div class="priority__item-content priority__item-content--text">
             <h3 class="priority__title">
               Як програма вплине на вашу кар'єру моряка?
             </h3>
@@ -430,38 +430,22 @@
       </div>
     </section>
 
-    <section class="terms" id="terms">
+    <div class="terms" id="terms">
       <div class="content__wrapper">
-        <h2 class="terms__title">Умови співпраці</h2>
-        <!-- <p class="terms__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac arcu
-          vitae nunc vulputate ultrices. Suspendisse potenti. Nullam auctor diam
-          at dolor bibendum, non tincidunt lacus dapibus. Vivamus maximus, lorem
-          a dignissim tincidunt, neque ex fermentum nisi, at vehicula nunc nunc
-          eget mi. Sed pulvinar libero ut arcu dictum, sit amet placerat arcu
-          ultricies. Praesent vel eros non elit lobortis sodales. Vivamus
-          convallis tellus eget sem tincidunt, ac ullamcorper ex posuere.
-          Maecenas nec felis et lectus condimentum egestas sit amet at metus.
-          Fusce quis dolor nisi. Suspendisse potenti.
-        </p>
-        <p class="terms__text">
-          Duis aliquet sapien sed nisi fermentum, a fringilla eros facilisis.
-          Curabitur id malesuada ipsum, ut egestas mi. Suspendisse potenti. Sed
-          dictum justo ut dolor cursus, vel egestas libero gravida. Integer
-          maximus dui a tellus feugiat dictum. Nam vehicula leo sed urna
-          volutpat, non tincidunt odio dapibus. Sed dictum lorem non est
-          vehicula, vel vehicula justo finibus. Aliquam sed ante sit amet magna
-          volutpat dignissim nec at lacus. Vestibulum ante ipsum primis in
-          faucibus orci luctus et ultrices posuere cubilia curae; Maecenas
-          volutpat fermentum odio, ut interdum sem euismod id. Vivamus volutpat
-          enim ac diam finibus, nec posuere orci elementum. Nam dignissim libero
-          sapien, at tincidunt mauris iaculis sed.
-        </p> -->
+        <h2 class="terms__title">Умови співпраці</h2>        
         <div class="btn terms__btn">
-          <a href="#">Публічний договір</a>
+          <a id="openModal" class="contract__link" href="#">Публічний договір</a>
         </div>
       </div>
-    </section>
+    </div>
+    <!-- Модалка -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe id="documentFrame" src="" width="100%" height="500px"></iframe>
+        <a href="./files/ДОГОВІР-ОФЕРТА.docx" download class="btn download-btn">Скачать</a>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="content__wrapper">
