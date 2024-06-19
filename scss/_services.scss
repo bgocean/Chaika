@@ -179,6 +179,14 @@
   }
 }
 
+@media (max-width: 800px) {
+  .service__help-item {
+    &::before {
+      left: -10px;
+    }
+  }
+}
+
 @media (max-width: 480px) {
   .service__help-item {
     font-size: 14px;
@@ -186,7 +194,7 @@
     &::before {
       content: url(../img/media/check-mob-2.png);
       position: absolute;
-      left: -5px;
+      left: 2px;
       top: 50%;
       margin-right: 30px;
       transform: translateY(-50%);

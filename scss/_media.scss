@@ -4,6 +4,15 @@
 
 // @media (max-with: 790px) {
 // }
+// @media (max-width: 1200px) {
+//   .container {
+//     max-width: 970px;
+//   }
+//   .content__wrapper {
+//     max-width: 940px;
+//   }
+// }
+
 
 @media (max-width: 940px) {
   .container {
@@ -14,13 +23,38 @@
   }
 }
 
+// @media (max-width:882px) {
+//   .container {
+//     max-width: 840px;
+//   }
+//   .content__wrapper {
+//     max-width: 738px;
+//   }
+// }
+
+// @media (max-width: 840px) {
+//   .container { max-width: 768px; }
+//   .content__wrapper {
+//     max-width: 746px;
+//   }   
+// }
+
+// @media (max-width: 768px) {
+//   .container {
+//     max-width: 650px;
+//   }
+//   .content__wrapper {
+//     max-width: 620px;
+//   }
+// }
+
 @media (max-width: 480px) {
   .container {
     max-width: 446px;
   }
   .content__wrapper {
     max-width: 428px;
-  }  
+  }
 }
 
 @media (max-width: 360px) {
@@ -31,3 +65,9 @@
     width: 328px;
   }
 }
+
+
+
+
+// 1215 - map
+// 1180px

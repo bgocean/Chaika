@@ -22,6 +22,12 @@
   padding-bottom: 50px;
 }
 
+@media (max-width: 1180px) {
+  .priority__item-listcontent {
+    padding-bottom: 28px;
+  }
+}
+
 @media (max-width: 940px) {
   .priority__item-listcontent {
     padding-bottom: 35px;
@@ -65,6 +71,12 @@
   font-size: 30px;
 }
 
+@media (max-width: 1080px) {
+  .priority__title {
+    margin-bottom: 35px;
+  }
+}
+
 @media (max-width: 940px) {
   .priority__title {
     margin-bottom: 30px;
@@ -76,12 +88,10 @@
       margin-bottom: 20px;
       font-size: 20px;
     }
-  }
-
-  .priority__title-mix {
-    margin-bottom: 28px;
-  }
+  }  
 }
+
+
 
 .priorities__item {
   display: grid;
@@ -95,6 +105,13 @@
   &::before {
     content: url(../img/marker.png);
     align-self: center;
+  }
+}
+
+@media (max-width: 1180px) {
+  .priorities__item {
+    font-size: 22px;
+    margin-bottom: 13px;
   }
 }
 
@@ -113,10 +130,16 @@
   @include card-img;
 }
 
+@media (max-width: 1180px) {
+  .priority__item-img img {
+    max-width: 480px;
+  }
+}
+
 @media (max-width: 940px) {
   .priority__item-img-1 img {
     width: 390px;
-    height: 490px;
+    height: 460px;
     object-fit: cover;
   }
 
@@ -128,9 +151,17 @@
 
   .priority__item-img-3 img {
     max-width: 390px;
-    height: 581px;
+    height: 560px;
     object-fit: cover;
   }
+}
+
+@media(max-width:790px) {
+  .priority__item-img-1 img { }
+
+  .priority__item-img-2 img { }
+
+  .priority__item-img-3 img { }
 }
 
 @media (max-width: 480px) {
@@ -142,7 +173,7 @@
   .priority__item-img-2 img {
     // width: 378px;
     // height: 211px;
-    width: 100%;
+    width: 378px;
     height: auto;
     object-fit: cover;
   }
@@ -152,9 +183,18 @@
     object-fit: cover;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 380px) {
+  .priority__item-img-1 img {
+    max-width: 100%;   
+    object-fit: cover;
+  }
+  .priority__item-img-2 img {
+    max-width: 100%;   
+    object-fit: cover;
+  }
   .priority__item-img-3 img {
-    width: 320px;
+    max-width: 100%;   
+    object-fit: cover;
   }
 }
 
@@ -164,6 +204,12 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 50px;
+}
+
+@media (max-width: 1180px) {
+  .priority__item-textcontent {
+    padding-bottom: 28px;
+  }
 }
 
 @media (max-width: 940px) {

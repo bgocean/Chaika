@@ -284,6 +284,33 @@
   overflow: hidden;
 }
 
+@media (max-width: 1215px) {
+  .map {
+    margin-left: 40px;
+    // height: 340px;
+    max-width: auto;
+  }
+}
+
+@media (max-width: 1190px) {
+  .map {
+    margin-left: 55px;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 1145px) {
+  .map {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .map {
+    max-width: 400px;
+  }
+}
+
 @media (max-width: 940px) {
   .map {
     margin-left: 40px;
@@ -297,5 +324,5 @@
     width: 330px;
     margin-left: 20px;
     margin-right: auto;
-  } 
+  }
 }
