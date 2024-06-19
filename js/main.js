@@ -1,3 +1,5 @@
+"use strict";
+
 $(document).ready(function () {
   $(".header__menu, .header__menu-mobil, .footer__menu").on(
     "click",
@@ -35,12 +37,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     for (let index = 0; index < formReq.length; index++) {
       const input = formReq[index];
+      formRemoveError(input);
 
       if (input.classList.contains("_email")) {
+        if (emailTest(input)) {
+          formAddError(input);
+          error++;
+        } else {
+          if (input.value === "") {
+            formAddError(input);
+            error++;
+          }
+        }
       }
     }
     function formAddError(input) {
       input.parentElement.classList.add("_error");
+      input.classList.add("_error");
     }
 
     function formRemoveError(input) {

@@ -325,7 +325,7 @@
     <section class="contacts" id="contacts">
       <div class="container">
         <div class="contacts__items">
-          <div class="contacts__form" id="form">
+          <form action="#" class="contacts__form" id="form">
             <h5 class="contacts__form-title">Связаться</h5>
             <p class="contacts__form-text">
               Остались вопросы или хочешь обсудить сотрудничество -
@@ -333,28 +333,32 @@
             </p>
             <input id="formName"
               type="text"
+              name="name"
               class="contacts__form-input _req"
               placeholder="Имя"
               required
             />
             <input id="formEmail"
               type="email"
+              name="email"
               class="contacts__form-input _req _email"
               placeholder="Почта"
               required
             />
             <input id="formPhone"
               type="tel"
+              name="phone"
               class="contacts__form-input _req"
               placeholder="Телефон"
               required
             />
             <textarea
-              class="contacts__form-textarea"
+              class="contacts__form-textarea _req"
               placeholder="Сообщение"
+              required
             ></textarea>
-            <button class="btn contacts__form-btn">Отправить</button>
-          </div>
+            <button type="submit" class="btn contacts__form-btn">Отправить</button>
+          </form>
           <div class="contacts__list">
             <ul class="contacts__list-items">
               <li class="contact__list-item">
