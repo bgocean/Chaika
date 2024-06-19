@@ -91,8 +91,6 @@
   }  
 }
 
-
-
 .priorities__item {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -127,7 +125,13 @@
 }
 
 .priority__item-img img {
-  @include card-img;
+  @include card-img;  
+}
+
+.priority__item-img-1 img {
+  // width: 480px;
+  // height: 560px;
+  object-fit: cover;
 }
 
 @media (max-width: 1180px) {
@@ -246,3 +250,5 @@
     font-size: 14px;
   }
 }
+
+
