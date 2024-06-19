@@ -325,27 +325,27 @@
     <section class="contacts" id="contacts">
       <div class="container">
         <div class="contacts__items">
-          <div class="contacts__form">
+          <div class="contacts__form" id="form">
             <h5 class="contacts__form-title">Связаться</h5>
             <p class="contacts__form-text">
               Остались вопросы или хочешь обсудить сотрудничество -
               <strong>заполни форму ниже</strong>
             </p>
-            <input
+            <input id="formName"
               type="text"
-              class="contacts__form-input"
+              class="contacts__form-input _req"
               placeholder="Имя"
               required
             />
-            <input
+            <input id="formEmail"
               type="email"
-              class="contacts__form-input"
+              class="contacts__form-input _req _email"
               placeholder="Почта"
               required
             />
-            <input
+            <input id="formPhone"
               type="tel"
-              class="contacts__form-input"
+              class="contacts__form-input _req"
               placeholder="Телефон"
               required
             />
@@ -429,7 +429,7 @@
     <section class="terms" id="terms">
       <div class="content__wrapper">
         <h2 class="terms__title">Условия сотрудничества</h2>
-        <p class="terms__text">
+        <!-- <p class="terms__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac arcu
           vitae nunc vulputate ultrices. Suspendisse potenti. Nullam auctor diam
           at dolor bibendum, non tincidunt lacus dapibus. Vivamus maximus, lorem
@@ -452,7 +452,7 @@
           volutpat fermentum odio, ut interdum sem euismod id. Vivamus volutpat
           enim ac diam finibus, nec posuere orci elementum. Nam dignissim libero
           sapien, at tincidunt mauris iaculis sed.
-        </p>
+        </p> -->
         <div class="btn terms__btn">
           <a href="#">Публичный договор</a>
         </div>
