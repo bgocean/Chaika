@@ -64,7 +64,7 @@
 
 .priority__title {
   margin-bottom: 40px;
-  max-width: 406px;
+  max-width: 416px;
   text-align: left;
   margin-left: 20px;
   font-family: $bold;
@@ -255,7 +255,6 @@
 }
 
 .priority__item-content--list {
-  padding: 15px 20px 12px;
   @media (max-width: 940px) {
     padding: 37px 20px 24px;
   }
@@ -266,7 +265,7 @@
     padding: 60px 20px 28px;
   }
 }
-.priority__item-content--mix{
+.priority__item-content--mix {
   @media (max-width: 940px) {
     padding: 58px 20px 28px;
   }
