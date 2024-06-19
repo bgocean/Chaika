@@ -24,13 +24,13 @@ menuBtn.addEventListener("click", () => {
 // Модалка
 document.addEventListener("DOMContentLoaded", function () {
   // Получаем модальное окно
-  var modal = document.getElementById("modal");
+  const modal = document.getElementById("modal");
 
   // Получаем кнопку, которая открывает модальное окно
-  var btn = document.getElementById("openModal");
+  const btn = document.getElementById("openModal");
 
   // Получаем элемент <span>, который закрывает модальное окно
-  var span = document.getElementsByClassName("close")[0];
+  const span = document.getElementsByClassName("close")[0];
 
   // Когда пользователь нажимает на кнопку, открываем модальное окно 
   btn.onclick = function () {
