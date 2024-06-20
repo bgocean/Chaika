@@ -1,14 +1,12 @@
 $(document).ready(function () {
-  $(".header__menu, .header__menu-mobil, .footer__menu").on(
-    "click",
-    "a",
-    function (event) {
-      event.preventDefault();
-      let id = $(this).attr("href"),
-        top = $(id).offset().top;
-      $("body,html").animate({ scrollTop: top }, 1500);
-    }
-  );
+  $(
+    ".header__menu, .header__menu-mobil, .content__btn-contacts, .content__btn-services, .footer__menu"
+  ).on("click", "a", function (event) {
+    event.preventDefault();
+    let id = $(this).attr("href"),
+      top = $(id).offset().top;
+    $("body,html").animate({ scrollTop: top }, 1500);
+  });
 });
 
 const menuBtn = document.querySelector(".menu__btn");
@@ -42,56 +40,29 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 });
 
-
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const form = document.getElementById("contactForm");
-
-//   form.addEventListener("submit", async function (e) {
-//       e.preventDefault();
-
-//       const formData = new FormData(form);
-
-//       const response = await fetch('send_to_telegram.php', {
-//           method: 'POST',
-//           body: formData
-//       });
-
-//       if (response.ok) {
-//           alert('Ваше сообщение отправлено!');
-//       } else {
-//           alert('Произошла ошибка при отправке сообщения.');
-//       }
-//   });
-// });
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contactForm");
 
   form.addEventListener("submit", async function (e) {
-      e.preventDefault(); // Предотвращаем стандартное поведение формы
+    e.preventDefault();
 
-      // Создаем объект FormData из нашей формы
-      const formData = new FormData(form);
+    const formData = new FormData(form);
 
-      try {
-          // Отправляем данные формы на сервер с помощью fetch
-          const response = await fetch('send_to_telegram.php', {
-              method: 'POST',
-              body: formData
-          });
+    try {
+      const response = await fetch("send_to_telegram.php", {
+        method: "POST",
+        body: formData,
+      });
 
-          // Проверяем, успешно ли было отправлено сообщение
-          if (response.ok) {
-              alert('Ваше сообщение отправлено!');
-              form.reset(); // Сбрасываем форму после успешной отправки
-          } else {
-              alert('Произошла ошибка при отправке сообщения.');
-          }
-      } catch (error) {
-          console.error('Error:', error);
-          alert('Произошла ошибка при отправке сообщения.');
+      if (response.ok) {
+        alert("Ваше повідомлення відправлено!");
+        form.reset();
+      } else {
+        alert("Сталася помилка при відправленні повідомлення.");
       }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Сталася помилка при відправленні повідомлення.");
+    }
   });
 });
-
