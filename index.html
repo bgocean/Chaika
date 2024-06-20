@@ -322,10 +322,11 @@
       </div>
     </div>
 
+
     <section class="contacts" id="contacts">
       <div class="container">
         <div class="contacts__items">
-          <form action="#" class="contacts__form" id="form">
+          <form action="#" class="contacts__form" id="contactForm" method="POST">
             <h5 class="contacts__form-title">Зв'язатись</h5>
             <p class="contacts__form-text">
               Залишилися питання або хочеш обговорити співпрацю -
@@ -334,27 +335,28 @@
             <input id="formName"
               type="text"
               name="name"
-              class="contacts__form-input _req"
+              class="contacts__form-input"
               placeholder="Ім'я"
               required
             />
             <input id="formEmail"
               type="email"
               name="email"
-              class="contacts__form-input _req _email"
+              class="contacts__form-input"
               placeholder="Пошта"
               required
             />
             <input id="formPhone"
               type="tel"
               name="phone"
-              class="contacts__form-input _req"
+              class="contacts__form-input"
               placeholder="Телефон"
               required
             />
             <textarea
-              class="contacts__form-textarea _req"
+              class="contacts__form-textarea"
               placeholder="Повідомлення"
+              name="message"
               required
             ></textarea>
             <button type="submit" class="btn contacts__form-btn">Відправити</button>
