@@ -314,6 +314,12 @@
   }
 }
 
+@media (max-width: 1030px) {
+  .map {
+    max-width: 360px;
+  }
+}
+
 @media (max-width: 940px) {
   .map {
     margin-left: 40px;
