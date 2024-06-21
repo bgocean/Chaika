@@ -66,3 +66,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// Мобильное меню с номером телефона
+document.addEventListener("DOMContentLoaded", function () {
+  const phoneIconLink = document.getElementById("phone-icon-link");
+  const wrapperMenuMedia = document.getElementById("wrapper__menu-media");
+
+  phoneIconLink.addEventListener("click", function (event) {
+    // Предотвращаем стандартное поведение ссылки
+    event.preventDefault();
+
+    // Переключаем видимость блока
+    if (wrapperMenuMedia.style.display === "none" || !wrapperMenuMedia.style.display) {
+      wrapperMenuMedia.style.display = "block";
+    } else {
+      wrapperMenuMedia.style.display = "none";
+    }
+  });
+});
