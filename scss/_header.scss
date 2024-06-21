@@ -226,6 +226,12 @@
   margin-bottom: 100px;
 }
 
+@media (max-width: 1030px) {
+  .header__content-img img {
+    object-fit: cover;
+  }
+}
+
 @media (max-width: 940px) {
   .header__content-img {
     margin-top: 25px;
