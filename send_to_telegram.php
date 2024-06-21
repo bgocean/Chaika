@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_POST['phone'];
     $messageContent = $_POST['message'];
 
-    $token = "TOKEN_HERE";
+    $token = "BOT_TOKEN_HERE";
     $chat_id = "YOUR_CHAT_ID";
 
     $message = "Name: " . $name . "\nEmail: " . $email . "\nPhone: " . $phone . "\nMessage: " . $messageContent;

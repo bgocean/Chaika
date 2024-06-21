@@ -255,6 +255,9 @@
   justify-content: center;
   .telegram__tele-btn {
     margin-right: 35px;
+    @media(max-width: 940px) {
+      margin-right: 25px;
+    }
   }
 }
 

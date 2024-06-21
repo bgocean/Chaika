@@ -138,6 +138,10 @@
   .priority__item-img img {
     max-width: 480px;
   }
+  .priority__item-img-2 img{
+    height: 328px;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 940px) {
@@ -255,11 +259,15 @@
 }
 
 .priority__item-content--list {
+  @media (max-width: 1180px) {
+    max-height: 100%;
+  }
   @media (max-width: 940px) {
     padding: 37px 20px 24px;
   }
 }
 .priority__item-content--text {
+  
   padding: 58px 20px 25px;
   @media (max-width: 940px) {
     padding: 60px 20px 28px;
