@@ -69,18 +69,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Мобильное меню с номером телефона
 document.addEventListener("DOMContentLoaded", function () {
-  const phoneIconLink = document.getElementById("phone-icon-link");
-  const wrapperMenuMedia = document.getElementById("wrapper__menu-media");
+  const phoneIconLink = document.querySelector("#phone-icon-link");
+  const wrapperMenuMedia = document.querySelector(".wrapper__menu-media");
+  const menuTelMedia = document.querySelector(".menu__tel-media");
 
-  phoneIconLink.addEventListener("click", function (event) {
-    // Предотвращаем стандартное поведение ссылки
-    event.preventDefault();
+  phoneIconLink.addEventListener("click", function (e) {
+    // Проверяем размер экрана
+    if (window.innerWidth > 480 && window.innerWidth <= 940) {
+      e.preventDefault();
+      wrapperMenuMedia.classList.toggle("show");
+      menuTelMedia.classList.toggle("show");
+    }
+  });
 
-    // Переключаем видимость блока
-    if (wrapperMenuMedia.style.display === "none" || !wrapperMenuMedia.style.display) {
-      wrapperMenuMedia.style.display = "block";
-    } else {
-      wrapperMenuMedia.style.display = "none";
+  // Скрываем меню, если экран за пределами диапазона при изменении размера окна
+  window.addEventListener("resize", function () {
+    if (window.innerWidth <= 480 || window.innerWidth > 940) {
+      wrapperMenuMedia.classList.remove("show");
+      menuTelMedia.classList.remove("show");
     }
   });
 });

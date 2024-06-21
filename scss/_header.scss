@@ -212,7 +212,7 @@
 
 @media (max-width: 940px) {
   .content__title {
-    font-size: 60px;
+    font-size: 55px;
   }
 }
 
@@ -324,20 +324,23 @@
 .wrapper__menu-media {
   display: flex;
   justify-content: flex-end;
+  position: absolute;
+  position: relative;
 }
 
 .menu__tel-media {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
   width: 168px;
   height: 50px;
   margin-top: 10px;
-  padding: 0 auto;
   @include card;
   border-radius: 10px;
   font-family: $proximabold;
   font-size: 16px;
+  margin-right: 0;
 }
 .menu__btn-link--media {
   text-align: center;
@@ -367,18 +370,15 @@
 }
 
 .header__menu-mobil {
-  // display: none;
   transform: translateY(-300%);
   transition: 0.3s;
 }
 
 .header__menu-mobil.menu__list--open {
-  // display: grid;
   transform: translateY(0);
 }
 
-// @media (max-width: 480px) {
-//   .header__menu-mobil {
-//     display: grid;
-//   }
-// }
+.wrapper__menu-media.show,
+.menu__tel-media.show {
+  display: flex;
+}
