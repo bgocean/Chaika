@@ -12,7 +12,11 @@
 //     max-width: 940px;
 //   }
 // }
-
+@media (max-width: 1115px) {
+  .content__wrapper {
+    max-width: 1040px;
+  }
+}
 
 @media (max-width: 940px) {
   .container {
@@ -36,7 +40,7 @@
 //   .container { max-width: 768px; }
 //   .content__wrapper {
 //     max-width: 746px;
-//   }   
+//   }
 // }
 
 // @media (max-width: 768px) {
@@ -65,9 +69,6 @@
     width: 328px;
   }
 }
-
-
-
 
 // 1215 - map
 // 1180px
