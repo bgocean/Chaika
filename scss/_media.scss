@@ -44,6 +44,25 @@
   }
 }
 
+@media (max-width: 800px) {
+  .container {
+    max-width: 790px;
+  }
+  .content__wrapper {
+    // max-width: 770px;
+    max-width: 720px;
+  }
+}
+ 
+@media (max-width: 760px) {
+  .container {
+    max-width: 730px;
+  }
+  .content__wrapper {
+    max-width: 700px;
+  }
+}
+
 @media (max-width: 480px) {
   .container {
     max-width: 446px;

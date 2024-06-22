@@ -180,6 +180,12 @@
   gap: 24px;
 }
 
+@media (max-width: 940px) {
+  .header__content-items {
+    padding-top: 45px;
+  }
+}
+
 @media (max-width: 480px) {
   .header__content-items {
     flex-direction: column-reverse;
@@ -246,6 +252,12 @@
     background-color: transparent;
     border: none;
     flex-basis: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__content-img {
+    object-fit: cover;
   }
 }
 

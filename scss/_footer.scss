@@ -33,9 +33,19 @@
   gap: 70px;
 }
 
+@media (max-width: 800px) {
+  .footer__menu-list {
+    gap: 30px;
+  }
+
+}
+
 @media (max-width: 940px) {
   .footer__menu-list {
     gap: 50px;
+  }
+  .footer__logo {
+   margin-left: 0;
   }
 }
 

@@ -24,6 +24,14 @@
   justify-content: space-between;
 }
 
+@media (max-width: 800px) {
+  .contacts__items {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 480px) {
   .contacts__items {
     flex-direction: column;
@@ -191,6 +199,13 @@
   .contacts__list {
     align-self: center;
     max-width: 390px;
+  }
+}
+
+@media (max-width: 800px) {
+  .contacts__list {
+    max-width: 100%;
+    margin-top: 50px;
   }
 }
 
