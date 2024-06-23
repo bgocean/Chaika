@@ -122,6 +122,12 @@
   justify-content: center;
 }
 
+@media (max-width: 760px) {
+  .center--wrapper {
+    justify-content: start;
+  }
+}
+
 .services__title {
   margin: 100px 0 100px;
   @include title;
