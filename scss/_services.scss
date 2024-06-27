@@ -176,6 +176,23 @@
   }
 }
 
+@media (max-width:1030px){
+  .service__help-item {
+    font-size: 22px;
+    margin-bottom: 30px;
+    &::before {
+      content: url(../img/media/check-mob.png);
+      position: absolute;
+      left: -5px;
+      top: 50%;
+      margin-right: 30px;
+      transform: translateY(-50%);
+    }
+    &:last-child {
+      margin-bottom: 100px;
+    }
+  }
+}
 @media (max-width: 940px) {
   .service__help-item {
     font-size: 20px;

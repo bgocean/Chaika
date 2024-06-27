@@ -105,7 +105,7 @@
 
 @media (max-width: 1130px) {
   .menu__list-link {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 @media (max-width: 940px) {
@@ -148,6 +148,11 @@
   font-size: 18px;
 }
 
+@media (max-width:1030px){
+  .menu__btn-link strong{
+    font-size: 17px;
+  }
+}
 @media (max-width: 940px) {
   .menu__btn-link {
     display: none;
