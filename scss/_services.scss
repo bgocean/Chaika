@@ -54,6 +54,12 @@
   // box-sizing: border-box;
 }
 
+@media (max-width: 760px) {
+  .service__item{
+    width: 100%;
+  }
+}
+
 @media (max-width: 480px) {
   .service__item {
     width: 100%;
@@ -176,7 +182,7 @@
   }
 }
 
-@media (max-width:1030px){
+@media (max-width: 1030px) {
   .service__help-item {
     font-size: 22px;
     margin-bottom: 30px;
