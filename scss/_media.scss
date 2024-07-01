@@ -1,9 +1,8 @@
 .wrapper__menu-media,
-.menu__tel-media {
-  display: none;
+.menu__tel-media { 
+  visibility: hidden;
+  opacity: 0;
 }
-
-
 
 @media (max-width: 1140px) {
   .container {
@@ -53,7 +52,7 @@
     max-width: 720px;
   }
 }
- 
+
 @media (max-width: 760px) {
   .container {
     max-width: 730px;
@@ -85,6 +84,3 @@
   }
 }
 
-// 1215 - map
-// 1180px
-//1030

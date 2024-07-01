@@ -18,15 +18,40 @@ menuBtn.addEventListener("click", () => {
 });
 
 // Модалка
+// document.addEventListener("DOMContentLoaded", function () {
+//   const modal = document.getElementById("modal");
+//   const btn = document.getElementById("openModal");
+//   const span = document.getElementsByClassName("close")[0];
+
+//   btn.onclick = function () {
+//     var iframe = document.getElementById("documentFrame");
+//     iframe.src = "./files/ДОГОВІР-ОФЕРТА.pdf";
+//     modal.style.display = "block";
+//   };
+
+//   span.onclick = function () {
+//     modal.style.display = "none";
+//   };
+
+//   window.onclick = function (event) {
+//     if (event.target == modal) {
+//       modal.style.display = "none";
+//     }
+//   };
+// });
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("modal");
   const btn = document.getElementById("openModal");
   const span = document.getElementsByClassName("close")[0];
 
   btn.onclick = function () {
-    var iframe = document.getElementById("documentFrame");
-    iframe.src = "./files/ДОГОВІР-ОФЕРТА.pdf";
-    modal.style.display = "block";
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+      window.open("./files/ДОГОВІР-ОФЕРТА.pdf", "_blank");
+    } else {
+      let iframe = document.getElementById("documentFrame");
+      iframe.src = "./files/ДОГОВІР-ОФЕРТА.pdf?nocache=" + new Date().getTime();
+      modal.style.display = "block";
+    }
   };
 
   span.onclick = function () {
@@ -39,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contactForm");
