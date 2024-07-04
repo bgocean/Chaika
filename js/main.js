@@ -17,28 +17,6 @@ menuBtn.addEventListener("click", () => {
   menuList.classList.toggle("menu__list--open");
 });
 
-// Модалка
-// document.addEventListener("DOMContentLoaded", function () {
-//   const modal = document.getElementById("modal");
-//   const btn = document.getElementById("openModal");
-//   const span = document.getElementsByClassName("close")[0];
-
-//   btn.onclick = function () {
-//     var iframe = document.getElementById("documentFrame");
-//     iframe.src = "./files/ДОГОВІР-ОФЕРТА.pdf";
-//     modal.style.display = "block";
-//   };
-
-//   span.onclick = function () {
-//     modal.style.display = "none";
-//   };
-
-//   window.onclick = function (event) {
-//     if (event.target == modal) {
-//       modal.style.display = "none";
-//     }
-//   };
-// });
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("modal");
   const btn = document.getElementById("openModal");
