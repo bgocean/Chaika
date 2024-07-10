@@ -9,12 +9,25 @@ $(document).ready(function () {
   });
 });
 
-const menuBtn = document.querySelector(".menu__btn");
-const menuList = document.querySelector(".header__menu-mobil");
-const menuMobil = document.querySelector(".header__menu-mobil");
+document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.querySelector(".menu__btn");
+  const menuList = document.querySelector(".header__menu-mobil");
 
-menuBtn.addEventListener("click", () => {
-  menuList.classList.toggle("menu__list--open");
+  menuBtn.addEventListener("click", () => {
+    menuList.classList.toggle("menu__list--open");
+  });
+
+  // Скрываем меню при клике вне его области
+  document.addEventListener("click", function (e) {
+    if (!menuList.contains(e.target) && !menuBtn.contains(e.target)) {
+      menuList.classList.remove("menu__list--open");
+    }
+  });
+
+  // Предотвращаем закрытие меню при клике внутри него
+  menuList.addEventListener("click", function (e) {
+    e.stopPropagation();
+  });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -42,7 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 });
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contactForm");
@@ -92,5 +104,21 @@ document.addEventListener("DOMContentLoaded", function () {
       wrapperMenuMedia.classList.remove("show");
       menuTelMedia.classList.remove("show");
     }
+  });
+
+  // Скрываем меню при клике вне его области
+  document.addEventListener("click", function (e) {
+    if (
+      !wrapperMenuMedia.contains(e.target) &&
+      !phoneIconLink.contains(e.target)
+    ) {
+      wrapperMenuMedia.classList.remove("show");
+      menuTelMedia.classList.remove("show");
+    }
+  });
+
+  // Предотвращаем закрытие меню при клике внутри него
+  wrapperMenuMedia.addEventListener("click", function (e) {
+    e.stopPropagation();
   });
 });
