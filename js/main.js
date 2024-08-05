@@ -17,14 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
     menuList.classList.toggle("menu__list--open");
   });
 
-  // Скрываем меню при клике вне его области
   document.addEventListener("click", function (e) {
     if (!menuList.contains(e.target) && !menuBtn.contains(e.target)) {
       menuList.classList.remove("menu__list--open");
     }
   });
 
-  // Предотвращаем закрытие меню при клике внутри него
   menuList.addEventListener("click", function (e) {
     e.stopPropagation();
   });
@@ -83,14 +81,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Мобильное меню с номером телефона
 document.addEventListener("DOMContentLoaded", function () {
   const phoneIconLink = document.querySelector("#phone-icon-link");
   const wrapperMenuMedia = document.querySelector(".wrapper__menu-media");
   const menuTelMedia = document.querySelector(".menu__tel-media");
 
   phoneIconLink.addEventListener("click", function (e) {
-    // Проверяем размер экрана
     if (window.innerWidth > 480 && window.innerWidth <= 940) {
       e.preventDefault();
       wrapperMenuMedia.classList.toggle("show");
@@ -98,7 +94,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Скрываем меню, если экран за пределами диапазона при изменении размера окна
   window.addEventListener("resize", function () {
     if (window.innerWidth <= 480 || window.innerWidth > 940) {
       wrapperMenuMedia.classList.remove("show");
@@ -106,7 +101,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Скрываем меню при клике вне его области
   document.addEventListener("click", function (e) {
     if (
       !wrapperMenuMedia.contains(e.target) &&
@@ -117,7 +111,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Предотвращаем закрытие меню при клике внутри него
   wrapperMenuMedia.addEventListener("click", function (e) {
     e.stopPropagation();
   });
